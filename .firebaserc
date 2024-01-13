@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "wedding-pass-karla-fer"
-  }
+  },
+  "targets": {
+    "wedding-pass-karla-fer": {
+      "hosting": {
+        "pass": [
+          "wedding-pass-karla-fer"
+        ],
+        "pass2": [
+          "wedding-pass-karla-fer-2"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

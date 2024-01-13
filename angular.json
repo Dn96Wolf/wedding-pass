@@ -99,6 +99,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "boda-app:build:production",
+              "serveTarget": "boda-app:serve:production"
+            },
+            "development": {
+              "buildTarget": "boda-app:build:development",
+              "serveTarget": "boda-app:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

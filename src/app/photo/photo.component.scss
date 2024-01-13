@@ -6,12 +6,12 @@
   background-color: #f6f4ec;
   position: relative;
   z-index: 0;
-  background-image: url('/assets/images/background-marmol.jpg');
-
+  background-image: url('/assets/images/aver.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   @media (min-width:1360px) {
     padding: 10px;
-    background-size: contain;
-
   }
 
   .presentation-first {
@@ -65,87 +65,62 @@
   .image-container {
     max-width: 1366px;
     min-width: 320px;
-    width: 300px;
-    height: 300px;
+    width: 320px;
+    height: 320px;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
     border-radius: 50%;
+    // opacity: 1;
     opacity: 0;
     background-image: url('/assets/images/goldenCircle.png');
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
     animation: HideAndfade 5s ease-in-out forwards;
     animation-delay: 10s;
 
-    @media (min-width:375px) {
-      width: 350px;
-      height: 350px;
-    }
+     @media (min-width:375px) {
+       width: 350px;
+       height: 350px;
+     }
 
-    @media (min-width:425px) {
-      width: 400px;
-      height: 400px;
-    }
+     @media (min-width:425px) {
+       width: 400px;
+       height: 400px;
+     }
 
-    @media (min-width:768px) {
-      width: 700px;
-      height: 700px;
-    }
+     @media (min-width:768px) {
+       width: 700px;
+       height: 700px;
+     }
 
-    @media (min-width:1024px) {
-      width: 750px;
-      height: 750px;
-    }
-
-
-
-    .wedding-pase-container {
-      width: 250px;
-      height: 250px;
-      margin: auto;
-      position: relative;
+     @media (min-width:1024px) {
+       width: 750px;
+       height: 750px;
+       position: relative;
+     }
 
 
-      @media (min-width:375px) {
-        width: 300px;
-        height: 300px;
+    .image {
+      width: 90%;
+      height: 90%;
+      padding: 35px;
+      border-radius: 50%;
+
+      @media (min-width:425px) {
+        padding: 35px;
       }
 
-
       @media (min-width:768px) {
-        width: 489px;
-        height: 489px;
+        padding: 55px;
       }
 
       @media (min-width:1024px) {
-        width: 542px;
-        height: 538px;
+        padding: 80px;
       }
 
-
-      @media (min-width:1440px) {
-        width: 500px;
-        height: 500px;
-      }
-
-
-      .image {
-        width: 100%;
-        height: 100%;
-        padding: 17px;
-        border-radius: 50%;
-        position: absolute;
-        top: -6px;
-        @media (min-width:1360px) {
-          padding: unset;
-          top: -10px;
-        }
-
-      }
     }
   }
 

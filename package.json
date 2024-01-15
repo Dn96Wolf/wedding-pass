@@ -8,11 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:boda-app": "node dist/boda-app/server/server.mjs",
-    "deployPass1": "firebase target:apply hosting pass wedding-pass-karla-fer && firebase deploy --only hosting:pass",
-    "deployPass2": "firebase target:apply hosting pass2 wedding-pass-karla-fer-2 && firebase deploy --only hosting:pass2",
-    "deployPass3": "firebase target:apply hosting pass3 wedding-pass-karla-fer-3 && firebase deploy --only hosting:pass3",
-    "deployPass4": "firebase target:apply hosting pass4 wedding-pass-karla-fer-4 && firebase deploy --only hosting:pass4",
-    "deployPass5": "firebase target:apply hosting pass5 wedding-pass-karla-fer-5 && firebase deploy --only hosting:pass5"
+    "deployPass1": "ng build && firebase target:apply hosting pass wedding-pass-karla-fer && firebase deploy --only hosting:pass",
+    "deployPass2": "ng build && firebase target:apply hosting pass2 wedding-pass-karla-fer-2 && firebase deploy --only hosting:pass2",
+    "deployPass3": "ng build && firebase target:apply hosting pass3 wedding-pass-karla-fer-3 && firebase deploy --only hosting:pass3",
+    "deployPass4": "ng build && firebase target:apply hosting pass4 wedding-pass-karla-fer-4 && firebase deploy --only hosting:pass4",
+    "deployPass5": "ng build && firebase target:apply hosting pass5 wedding-pass-karla-fer-5 && firebase deploy --only hosting:pass5"
   },
   "private": true,
   "dependencies": {
